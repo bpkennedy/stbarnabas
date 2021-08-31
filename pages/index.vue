@@ -5,9 +5,6 @@
       <section v-for="post in posts" :key="post.fields.slug">
         <div
           class="image"
-          :style="
-            `background: url(https:${post.fields.heroImage.fields.file.url}) center center no-repeat`
-          "
         ></div>
         <h2 class="title">
           <nuxt-link :to="post.fields.slug">{{ post.fields.title }}</nuxt-link>

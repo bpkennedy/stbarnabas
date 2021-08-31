@@ -1,5 +1,8 @@
 [build]
   publish = "dist"
-  command = "npm run generate"
+  command = "./deploy.sh"
 [build.environment]
-  NODE_VERSION = "11"
+  NETLIFY_USE_YARN = "true"
+  NODE_ENV = "production"
+  NODE_VERSION = "14"
+  YARN_VERSION = "1.22.10"
